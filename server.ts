@@ -93,19 +93,21 @@ class Res {
   }
 }
 
-const app = new Express()
+// const app = new Express()
 
-const middleware = (req,res,next) => {
-  const {params : { id}} = req
-  console.log('id' , id)
-}
+// const middleware = (req,res,next) => {
+//  const {params : { id}} = req
+//  console.log('id' , id)
+//}
 
-const controller = (req,res) => {
-  console.log('callback')
-}
+//const controller = (req,res) => {
+//  console.log('callback')
+//}
 
-app.get('/api',middleware,controller)
+//app.get('/api',middleware,controller)
 
-app.listen(3000, () => {
-  console.log(`Server running on port: ${3000}`)
-})
+//app.listen(3000, () => {
+//  console.log(`Server running on port: ${3000}`)
+//})
+
+export default Express
